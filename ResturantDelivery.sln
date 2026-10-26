@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "Test\TestPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOResturant", "DTOResturant\DTOResturant.csproj", "{547B1D05-86E3-437D-9D8B-BE0A91D94BE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantWebService", "ResturantWebService\ResturantWebService.csproj", "{BC1AF05C-8822-43B1-8222-F0F6273C608A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{547B1D05-86E3-437D-9D8B-BE0A91D94BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{547B1D05-86E3-437D-9D8B-BE0A91D94BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{547B1D05-86E3-437D-9D8B-BE0A91D94BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1AF05C-8822-43B1-8222-F0F6273C608A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1AF05C-8822-43B1-8222-F0F6273C608A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1AF05C-8822-43B1-8222-F0F6273C608A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1AF05C-8822-43B1-8222-F0F6273C608A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

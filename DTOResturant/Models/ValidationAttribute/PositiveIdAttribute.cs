@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 namespace DTOResturant.Models.ValidationAttribute
 {
     [AttributeUsage(AttributeTargets.Property)]
-    public class PositiveIdAttribute : ValidationAttribute
+    public class PositiveIdAttribute : System.ComponentModel.DataAnnotations.ValidationAttribute
     {
         public PositiveIdAttribute()
         {

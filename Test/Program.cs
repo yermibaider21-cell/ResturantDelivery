@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
 using TestProject.Models;
+using ResturantWebService.ORM;
 
 namespace TestProject
 {
@@ -94,6 +95,14 @@ namespace TestProject
                 Grades = null
 
             });
+            static void TestDbContext()
+            {
+                DBContext dBContext = new DBContext();
+                dBContext.OpenConnection();
+                dBContext.select("");
+                dBContext.CloseConnection();
+
+            }
 
         }
        

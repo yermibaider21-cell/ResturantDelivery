@@ -1,6 +1,6 @@
 ﻿#nullable enable
 
-using DTO;
+using DTOResturant.Models.ValidationAttribute;
 using System.ComponentModel.DataAnnotations;
 
 namespace DTOResturant.Models.Models

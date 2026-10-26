@@ -9,7 +9,8 @@ namespace DTOResturant.Models.ViewModel
 {
     internal class MenuViewModel
     {
-        public Category catagory { get; set; }
-        public  Dish dish { get; set; } 
+        
+        List<Category> categories { get; set; } 
+        List<Dish> dishes { get; set; }
     }
 }

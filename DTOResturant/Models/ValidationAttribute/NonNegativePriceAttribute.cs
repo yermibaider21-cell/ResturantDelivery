@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 namespace DTOResturant.Models.ValidationAttribute
 {
     [AttributeUsage(AttributeTargets.Property)]
-    public class NonNegativePriceAttribute : ValidationAttribute
+    public class NonNegativePriceAttribute : System.ComponentModel.DataAnnotations.ValidationAttribute
     {
         public NonNegativePriceAttribute()
         {

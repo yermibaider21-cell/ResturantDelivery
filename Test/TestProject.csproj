@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DTOResturant\DTOResturant.csproj" />
+    <ProjectReference Include="..\ResturantWebService\ResturantWebService.csproj" />
+  </ItemGroup>
+
 </Project>

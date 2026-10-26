@@ -8,7 +8,7 @@ using System.Globalization;
 namespace DTOResturant.Models.ValidationAttribute
 {
     [AttributeUsage(AttributeTargets.Property)]
-    public class ValidOrderDateAttribute : ValidationAttribute
+    public class ValidOrderDateAttribute : System.ComponentModel.DataAnnotations.ValidationAttribute
     {
         public ValidOrderDateAttribute()
         {
