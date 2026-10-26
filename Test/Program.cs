@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
 using TestProject.Models;
-using ResturantWebService.ORM;
+using ResturantWebService.ORM.DbContext;
 
 namespace TestProject
 {

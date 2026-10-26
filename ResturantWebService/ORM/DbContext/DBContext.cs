@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using System.Data.OleDb;
 
-namespace ResturantWebService.ORM
+namespace ResturantWebService.ORM.DbContext
 {
     public class DBContext : IDBContext
     {
@@ -11,57 +11,57 @@ namespace ResturantWebService.ORM
         OleDbTransaction transaction;
         public DBContext()
         {
-            this.connection = new OleDbConnection();
-            this.connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\ירמי מגמה\פרויקט יב\ResturantDelivery\ResturantWebService\AppData\ResturantDeliveryA.accdb""";
-            this.command = new OleDbCommand();
-            this.command.Connection = this.connection;
+            connection = new OleDbConnection();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""C:\ירמי מגמה\פרויקט יב\ResturantDelivery\ResturantWebService\AppData\ResturantDeliveryA.accdb""";
+            command = new OleDbCommand();
+            command.Connection = connection;
         }
 
         public void CloseConnection()
         {
-            this.connection?.Close(); 
+            connection?.Close(); 
         }
 
         public void CloseTransaction()
         {
-            if (this.transaction != null)
+            if (transaction != null)
             {
-                this.transaction.Dispose();
+                transaction.Dispose();
             }
         }
 
         public void Commit()
         {
-           this.transaction?.Commit();
+           transaction?.Commit();
         }
 
         public int ChangeData(string sql)
         {
-            this.command.CommandText = sql;
-            return this.command.ExecuteNonQuery();
+            command.CommandText = sql;
+            return command.ExecuteNonQuery();
         }
 
       
 
         public void OpenConnection()
         {
-            this.connection.Open();
+            connection.Open();
         }
 
         public void OpenTransaction()
         {
-            this.transaction = this.connection.BeginTransaction();
+            transaction = connection.BeginTransaction();
         }
 
         public void Rollback()
         {
-            this.transaction.Rollback();
+            transaction.Rollback();
         }
 
         public IDataReader select(string sql)
         {
-            this.command.CommandText = sql;
-            return this.command.ExecuteReader();
+            command.CommandText = sql;
+            return command.ExecuteReader();
         }
 
         

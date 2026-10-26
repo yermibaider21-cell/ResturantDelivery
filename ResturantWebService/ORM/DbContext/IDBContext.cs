@@ -1,6 +1,6 @@
 ﻿using System.Data;
 
-namespace ResturantWebService.ORM
+namespace ResturantWebService.ORM.DbContext
 {
     public interface IDBContext
     {
